@@ -5,7 +5,7 @@ const custom_error_1 = require("./custom-error");
 class UnauthorizedError extends custom_error_1.CustomError {
     constructor() {
         super("You're not authorized to access this route");
-        this.StatusCode = 404;
+        this.StatusCode = 401;
         this.reason = "You're not authorized to access this route";
         Object.setPrototypeOf(this, UnauthorizedError.prototype);
     }
