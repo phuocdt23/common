@@ -14,7 +14,7 @@ declare global {
 
 export const currentUser = async (req: Request, res: Response, next: NextFunction) => {
   if (!req.session?.jwt) {
-    next();
+    return next();
   }
 
   try {
