@@ -13,10 +13,20 @@ export * from './middlewares/require-auth';
 export * from './middlewares/validate-request';
 
 // event
+// base event
 export * from './events/base-listener';
 export * from './events/base-publisher';
+
+// channel name (in NATS)
 export * from './events/subjects';
+
+// ticket event
 export * from './events/ticket-created-event';
 export * from './events/ticket-updated-event';
 
-export * from './events/types/order-status'
+// order event
+export * from './events/order-created-event';
+export * from './events/order-cancelled-event';
+
+// order status
+export * from './events/types/order-status';
